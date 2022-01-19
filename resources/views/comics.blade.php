@@ -14,5 +14,8 @@
                @endforeach
            </div>
        </div>
+         <div class="text-center">
+             <button class="btn"> <h4>load more</h4> </button>
+         </div>
    </section>
 @endsection
