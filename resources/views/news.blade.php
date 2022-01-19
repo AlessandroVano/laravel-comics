@@ -1,5 +1,5 @@
 @extends('layouts.main')
 
 @section('main-content')
-    <h3>comics</h3>
+  <h2>News</h2>
 @endsection
