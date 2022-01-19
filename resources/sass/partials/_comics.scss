@@ -1,0 +1,35 @@
+.comics {
+    background-color: rgba(0, 0, 0, 0.822);
+    padding: 2rem 0;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.card {
+    width: calc(100% / 6);
+    padding: 10px;
+   .card-img {
+       width: 100%;
+       height: 180px;
+       img {
+        
+           height: 100%;
+           width: 100%;
+           object-fit: cover;
+           object-position: top;
+       }
+   }
+    h3 {
+        font-size: 12px;
+        text-transform: uppercase;
+        width: 140px;
+        margin-top: 0.8rem ;
+        margin-bottom: 2rem;
+    }
+}
+
