@@ -136,3 +136,22 @@ a {
   margin-top: 0.8rem;
   margin-bottom: 2rem;
 }
+
+.comics-detail {
+  background-image: url("/images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  border-bottom: 50px solid #0182f9;
+}
+.comics-detail .container {
+  padding: 0 7rem;
+  height: 100%;
+  position: relative;
+}
+.comics-detail .container .card-single {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  transform: translateY(40px);
+}

@@ -3,14 +3,17 @@
    <section class="comics">
        <div class="container">
            <div class="cards">
-               @foreach ($comics as $comic )
+               @foreach ($comics as $index => $comic )
                <div class="card">
-                   <div class="card-img">
-                       <img src="{{ $comic['thumb']}}" alt="{{$comic['title']}}">
-
-                   </div>
-                   <h3> {{ $comic['series'] }}</h3>
-               </div>
+                   {{-- AGGIUNTA LINK --}}
+                   <a href="{{ route('comic-detail', ['id' => $index])}}">
+                       <div class="card-img">
+                           <img src="{{ $comic['thumb']}}" alt="{{$comic['title']}}">
+    
+                       </div>
+                            <h3> {{ $comic['series'] }}</h3>
+                        </a>
+                    </div>
                @endforeach
            </div>
        </div>
