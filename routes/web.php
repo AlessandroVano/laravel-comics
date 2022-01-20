@@ -37,7 +37,7 @@ Route::get('/comics', function() {
 // (def di rotta con parametro)
 Route::get('/comic/{id}', function($id){
     $comics = config('comics-data');
-    /* dump($comics, $id); */
+  /*    dump($comics, $id);  */
 
     // check id  
     if(is_numeric($id) && $id >= 0 && $id < count($comics) ) {
@@ -45,7 +45,7 @@ Route::get('/comic/{id}', function($id){
 
         //qui prendo il prodotto singolo
         $comic = $comics[$id];
-        /* dump($comic); */
+      /*    dump($comic);  */
 
     } else {
         abort(404); // qui lo faccio riportare alla pagina 404

@@ -21,8 +21,25 @@
     text-transform: uppercase;
     font-size: 0.7rem;
     border: 3px solid rgb(68, 68, 247);
-     background-color: rgb(73, 73, 73); 
+     background-color: rgb(70, 70, 70); 
   cursor: pointer;
   color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-grow {
+    display: flex;
+    flex-grow: 1;
+}
+
+.justify-content-b {
+    justify-content: space-between;
+}
+
+.p {
+    padding: 3px;
 }
 

@@ -35,9 +35,26 @@ body {
   text-transform: uppercase;
   font-size: 0.7rem;
   border: 3px solid #4444f7;
-  background-color: #494949;
+  background-color: #464646;
   cursor: pointer;
   color: white;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-grow {
+  display: flex;
+  flex-grow: 1;
+}
+
+.justify-content-b {
+  justify-content: space-between;
+}
+
+.p {
+  padding: 3px;
 }
 
 .main-header .container {
@@ -74,6 +91,7 @@ body {
 
 .bg {
   background-color: #383737;
+  border-top: 18px solid #0182f9;
 }
 
 .content {
@@ -139,13 +157,13 @@ a {
 
 .comics-detail {
   background-image: url("/images/jumbotron.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
   border-bottom: 50px solid #0182f9;
+  color: white;
 }
 .comics-detail .container {
-  padding: 0 7rem;
+  padding: 0 8rem;
   height: 100%;
   position: relative;
 }
@@ -154,4 +172,59 @@ a {
   align-items: flex-end;
   height: 100%;
   transform: translateY(40px);
+}
+.comics-detail .container .card-single .im {
+  border: 0.5px solid white;
+}
+.comics-detail .container .card-single .text-1 {
+  position: absolute;
+  transform: translateX(1px) translateY(-270px);
+  background-color: #61aef7;
+  padding: 1px 5px 2px 7px;
+}
+.comics-detail .container .card-single .text-2 {
+  position: absolute;
+  background-color: #61aef7;
+  padding: 1px 50px 2px 51px;
+  transform: translateY(-1px) translateX(1px);
+}
+
+.container-2 {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 0 19rem;
+  color: white;
+}
+.container-2 .section-left {
+  padding-right: 30px;
+  width: 67%;
+}
+.container-2 .section-left h1 {
+  color: #1c3d57;
+}
+.container-2 .section-left p {
+  line-height: 25px;
+  color: #76787a;
+  font-size: 14px;
+}
+.container-2 .section-left .prezzo {
+  background-color: #55ba5a;
+  border-bottom: 2px solid #55ba5a;
+  margin: 15px 0;
+  padding: 5px;
+}
+.container-2 .section-left .prezzo .padding {
+  padding: 3px;
+}
+.container-2 .section-left .d-flex {
+  border-right: 2px solid #0f880f;
+}
+
+.section-right {
+  width: 33%;
+}
+.section-right h2 {
+  font-size: 14px;
+  color: #807d7d;
+  text-align: end;
 }
